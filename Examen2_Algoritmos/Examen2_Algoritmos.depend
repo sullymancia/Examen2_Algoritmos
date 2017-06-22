@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1498161406 source:c:\users\sully mancia\documents\clases\analisisdealgoritmos\segundoparcial\examen2_algoritmos\examen2_algoritmos\test.cpp
+	"Test.h"
+
+1498161406 c:\users\sully mancia\documents\clases\analisisdealgoritmos\segundoparcial\examen2_algoritmos\examen2_algoritmos\test.h
+	<iostream>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
