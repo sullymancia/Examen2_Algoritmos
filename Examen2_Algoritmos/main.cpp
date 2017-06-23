@@ -34,18 +34,19 @@ vector<int> getPath(int **DAG, int size, int source, int destination)
 {
  vector<int> answer;
  int least_weight = 1000;
- int next_vertex = 1000;  while(source != destination){
-   for(int dest = 0; dest < size; dest++){
+ int next_vertex = 1000;
 
-     if(DAG[source][dest] == -1) continue;
-            if(DAG[source][dest] < least_weight){
-                    least_weight = DAG[source][dest];
-                        next_vertex = dest;
+//
+   for(int destino = 0; destino < size; destino++){
+
+     if(DAG[source][destino] == -1) continue;
+            if(DAG[source][destino] < least_weight){
+                    least_weight = DAG[source][destino];
+                        next_vertex = destino;
      }
    }    answer.push_back(next_vertex);
             source = next_vertex;
                 least_weight = 1000;
- }
  return answer;
 }
 
